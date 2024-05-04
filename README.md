@@ -23,7 +23,7 @@ This repository contains Java programs and solved problems focusing on various J
     - Conditional Loops
     - Methods
 
-## Collection Framework
+## <a href="https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework">Collection Framework</a>
 
 This section covers various aspects of the Collection Framework in Java, including classes like Arrays, Collections, Lists, Maps, Queues, and Sets.
 
@@ -51,7 +51,7 @@ This section covers various aspects of the Collection Framework in Java, includi
 
 - Understanding and utilizing Set interfaces and implementations like HashSet, TreeSet, etc., for storing unique elements.
 
-## Concepts
+## <a href="https://github.com/Prathamr-codes/Java/tree/main/Concepts">Concepts</a>
 
 This section delves into fundamental Java concepts, providing explanations and examples for better understanding.
 
@@ -79,7 +79,7 @@ This section delves into fundamental Java concepts, providing explanations and e
 
 - Operations on strings in Java, such as concatenation, substring, etc.
 
-## Solved Problems
+## <a href="https://github.com/Prathamr-codes/Java/tree/main/SolvedProblems">Solved Problems</a>
 
 This section presents solved problems demonstrating the application of Java concepts in real-world scenarios.
 
