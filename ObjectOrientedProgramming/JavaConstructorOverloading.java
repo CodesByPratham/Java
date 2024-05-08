@@ -1,10 +1,10 @@
 package ObjectOrientedProgramming;
 
-// User defined class Student.
-class Student {
+// User defined class Students.
+class Students {
 
     // Default Constructor.
-    Student() {
+    Students() {
         System.out.println("This is default constructor.");
     }
 
@@ -17,7 +17,7 @@ class Student {
      */
     
     // Parameterized constructor used to initialize the data members.
-    Student(int rollNo, int age, int percentage, String name) {
+    Students(int rollNo, int age, int percentage, String name) {
         this.rollNo = rollNo;
         this.name = name;
         this.age = age;
@@ -25,7 +25,7 @@ class Student {
     }
 
     // Copy constructor that takes an object as a parameter.
-    Student(Student stu) {
+    Students(Students stu) {
         this.rollNo = stu.rollNo;
         this.name = stu.name;
         this.age = stu.age;
@@ -48,7 +48,7 @@ public class JavaConstructorOverloading {
     public static void main(String[] args) {
 
         // Creation of an object that calls default constructor.
-        Student s1 = new Student();
+        Students s1 = new Students();
         s1.rollNo = 99;
         s1.name = "Pratham";
         s1.age = 20;
@@ -56,11 +56,11 @@ public class JavaConstructorOverloading {
         s1.printInfo();
 
         // Creation of an object that calls parameterized constructor.
-        Student s2 = new Student(11, 20, 89, "Kritika");
+        Students s2 = new Students(11, 20, 89, "Kritika");
         s2.printInfo();
 
         // Creation of an object that calls the copy constructor.
-        Student s3 = new Student(s1);
+        Students s3 = new Students(s1);
         s3.printInfo();
     }
 }
