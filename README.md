@@ -1,6 +1,6 @@
-# Java Concepts and Solved Problems
+# Java Concepts
 
-This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, and more. Below is an overview of the contents and how to navigate through them.
+This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, Object-Oriented Programming (OOP), basic programming constructs like arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, and more. Below is an overview of the contents and how to navigate through them.
 
 ## Contents
 
@@ -11,14 +11,20 @@ This repository contains Java programs and solved problems focusing on various J
     - Maps
     - Queues
     - Set
-2. [Concepts](#concepts)
+2. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
+    - Classes and Objects
+    - Inheritance
+    - Polymorphism
+    - Abstraction
+    - Encapsulation
+3. [Basic Programming Concepts](#basic-programming-concepts)
     - Arrays
     - ArrayLists
     - Methods
     - Shadowing
     - Type Casting
     - Strings
-3. [Solved Problems](#solved-problems)
+4. [Solved Problems](#solved-problems)
     - Arrays
     - Conditional Loops
     - Methods
@@ -51,7 +57,31 @@ This section covers various aspects of the Collection Framework in Java, includi
 
 - Understanding and utilizing Set interfaces and implementations like HashSet, TreeSet, etc., for storing unique elements.
 
-## <a href="https://github.com/Prathamr-codes/Java/tree/main/Concepts">Concepts</a>
+## <a href="https://github.com/Prathamr-codes/Java/tree/main/ObjectOrientedProgramming">Object-Oriented Programming (OOP)</a>
+
+Exploring the core concepts of Object-Oriented Programming which form the foundation of Java's structure and modular approach.
+
+### Classes and Objects
+
+- Classes define a blueprint for objects. Objects are instances of classes and encapsulate state and behavior.
+
+### Inheritance
+
+- Inheritance is a mechanism where one class inherits the properties and behaviors of another class, promoting code reusability.
+
+### Polymorphism
+
+- Polymorphism allows methods to do different things based on the object it is acting upon, enhancing flexibility in code.
+
+### Abstraction
+
+- Abstraction simplifies complexity by hiding the detailed implementation and showing only the essential features of an object or system.
+
+### Encapsulation
+
+- Encapsulation protects the data in an object from unwanted access by binding the data with the code that manipulates it.
+
+## <a href="https://github.com/Prathamr-codes/Java/tree/main/Concepts">Basic Programming Concepts</a>
 
 This section delves into fundamental Java concepts, providing explanations and examples for better understanding.
 
