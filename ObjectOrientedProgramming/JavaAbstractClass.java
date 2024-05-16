@@ -23,17 +23,20 @@ class IT extends Subject {
 
     @Override
     void syllabus() {
-        System.out.println("C , Java , C++");
+        System.out.println("C, Java, C++");
     }
 }
 
 public class JavaAbstractClass {
 
     public static void main(String[] args) {
-        
+
         Subject x = new IT();
 
         x.syllabus();
         x.Learn();
     }
 }
+
+// Refer the GFG for detailed explanation:
+// https:// www.geeksforgeeks.org/classes-objects-java/
