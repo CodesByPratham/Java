@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Inheritance;
 
 /*
  * Concept of multiple inheritance:
@@ -14,6 +14,6 @@ public class JavaMultipleInheritance {
 
     public static void main(String[] args) {
 
-        System.out.println("Note: Java doesnt support Multiple Inheritance");
+        System.out.println("Note: Java do not support Multiple Inheritance");
     }
 }

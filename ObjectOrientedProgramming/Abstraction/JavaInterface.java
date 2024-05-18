@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Abstraction;
 
 // Interface Vehicles that will be implemented by various classes.
 interface Vehicles {

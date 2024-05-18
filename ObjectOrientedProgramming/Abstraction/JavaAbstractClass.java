@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Abstraction;
 
 /*
  * Concept of Abstract Class:

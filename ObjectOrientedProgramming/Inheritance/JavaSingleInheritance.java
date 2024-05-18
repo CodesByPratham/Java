@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Inheritance;
 
 /*
  * Concept of Single Inheritance:

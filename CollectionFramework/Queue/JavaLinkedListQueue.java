@@ -2,7 +2,7 @@ package CollectionFramework.Queue;
 
 import java.util.LinkedList;
 
-public class JavaLinkedList {
+public class JavaLinkedListQueue {
 
     public static void main(String[] args) {
 

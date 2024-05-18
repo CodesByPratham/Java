@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.ClassesAndObjects;
 
 // User defined class Students.
 class Students {

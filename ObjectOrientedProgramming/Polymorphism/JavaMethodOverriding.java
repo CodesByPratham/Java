@@ -1,4 +1,4 @@
-package ObjectOrientedProgramming;
+package ObjectOrientedProgramming.Polymorphism;
 
 // Super class Parent whose method is overridden by the sub class Child.
 class Parent {
