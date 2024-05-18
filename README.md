@@ -1,6 +1,6 @@
 # Java Concepts
 
-This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, Object-Oriented Programming (OOP), basic programming constructs like arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, and more. Below is an overview of the contents and how to navigate through them.
+This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, Object-Oriented Programming (OOP), basic programming constructs like arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, exceptions, and more. Below is an overview of the contents and how to navigate through them.
 
 ## Contents
 
@@ -24,12 +24,22 @@ This repository contains Java programs and solved problems focusing on various J
     - Shadowing
     - Type Casting
     - Strings
-4. [Solved Problems](#solved-problems)
+4. [Exceptions](#exceptions)
+    - Types of Exceptions
+        - User-Defined Exceptions
+        - Built-in Exceptions
+            - Checked Exceptions
+            - Unchecked Exceptions
+    - Throw
+    - Throws
+    - Finally
+    - Chained Exceptions
+5. [Solved Problems](#solved-problems)
     - Arrays
     - Conditional Loops
     - Methods
 
-## <a href="https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework">Collection Framework</a>
+## [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
 
 This section covers various aspects of the Collection Framework in Java, including classes like Arrays, Collections, Lists, Maps, Queues, and Sets.
 
@@ -57,7 +67,7 @@ This section covers various aspects of the Collection Framework in Java, includi
 
 - Understanding and utilizing Set interfaces and implementations like HashSet, TreeSet, etc., for storing unique elements.
 
-## <a href="https://github.com/Prathamr-codes/Java/tree/main/ObjectOrientedProgramming">Object-Oriented Programming (OOP)</a>
+## [Object-Oriented Programming (OOP)](https://github.com/Prathamr-codes/Java/tree/main/ObjectOrientedProgramming)
 
 Exploring the core concepts of Object-Oriented Programming which form the foundation of Java's structure and modular approach.
 
@@ -81,7 +91,7 @@ Exploring the core concepts of Object-Oriented Programming which form the founda
 
 - Encapsulation protects the data in an object from unwanted access by binding the data with the code that manipulates it.
 
-## <a href="https://github.com/Prathamr-codes/Java/tree/main/Concepts">Basic Programming Concepts</a>
+## [Basic Programming Concepts](https://github.com/Prathamr-codes/Java/tree/main/Concepts)
 
 This section delves into fundamental Java concepts, providing explanations and examples for better understanding.
 
@@ -109,7 +119,36 @@ This section delves into fundamental Java concepts, providing explanations and e
 
 - Operations on strings in Java, such as concatenation, substring, etc.
 
-## <a href="https://github.com/Prathamr-codes/Java/tree/main/SolvedProblems">Solved Problems</a>
+## [Exceptions](https://github.com/Prathamr-codes/Java/tree/main/Exceptions)
+
+This section covers the concepts of handling exceptions in Java, ensuring robust and error-free code.
+
+### Types of Exceptions
+
+#### User-Defined Exceptions
+- Creating custom exceptions to handle specific error scenarios.
+
+#### Built-in Exceptions
+
+##### Checked Exceptions
+- Exceptions that are checked at compile-time.
+
+##### Unchecked Exceptions
+- Exceptions that occur at runtime and are not checked at compile-time.
+
+### Throw
+- The `throw` keyword is used to explicitly throw an exception.
+
+### Throws
+- The `throws` keyword is used in method signatures to declare that a method can throw certain exceptions.
+
+### Finally
+- The `finally` block contains code that is always executed, whether an exception is handled or not.
+
+### Chained Exceptions
+- Chained exceptions allow an exception to maintain a cause, which is useful for debugging.
+
+## [Solved Problems](https://github.com/Prathamr-codes/Java/tree/main/SolvedProblems)
 
 This section presents solved problems demonstrating the application of Java concepts in real-world scenarios.
 

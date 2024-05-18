@@ -22,6 +22,5 @@ public class JavaChainedException {
             throw ex; // Throw the new exception with the chained exception
 
         }
-
     }
 }
