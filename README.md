@@ -1,6 +1,6 @@
 # Java Concepts
 
-This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, Object-Oriented Programming (OOP), basic programming constructs like arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, exceptions, and more. Below is an overview of the contents and how to navigate through them.
+This repository contains Java programs and solved problems focusing on various Java concepts, including the Collection Framework, Object-Oriented Programming (OOP), basic programming constructs like arrays, ArrayLists, methods, shadowing, type casting, strings, conditional loops, exceptions, multithreading, and more. Below is an overview of the contents and how to navigate through them.
 
 ## Contents
 
@@ -34,7 +34,14 @@ This repository contains Java programs and solved problems focusing on various J
     - Throws
     - Finally
     - Chained Exceptions
-5. [Solved Problems](#solved-problems)
+5. [Multithreading](#multithreading)
+    - Basics of Multithreading
+    - Two Ways to Use Multithreading
+    - Thread Priorities
+    - Thread States
+    - Main Thread
+    - Thread Methods
+6. [Solved Problems](#solved-problems)
     - Arrays
     - Conditional Loops
     - Methods
@@ -147,6 +154,34 @@ This section covers the concepts of handling exceptions in Java, ensuring robust
 
 ### Chained Exceptions
 - Chained exceptions allow an exception to maintain a cause, which is useful for debugging.
+
+## [Multithreading](https://github.com/Prathamr-codes/Java/tree/main/Multithreading)
+
+This section explores multithreading concepts in Java, enabling concurrent execution of two or more threads for maximum utilization of CPU.
+
+### Basics of Multithreading
+
+- Understanding the core concepts of multithreading, including its advantages and basic structure.
+
+### Two Ways to Use Multithreading
+
+- Implementing multithreading using the `Thread` class and the `Runnable` interface.
+
+### Thread Priorities
+
+- Managing thread priorities to influence the order of thread execution.
+
+### Thread States
+
+- Exploring the lifecycle of a thread and various thread states such as new, runnable, blocked, waiting, timed waiting, and terminated.
+
+### Main Thread
+
+- Understanding the main thread in Java and how it controls the execution of a program.
+
+### Thread Methods
+
+- Using important thread methods such as `start()`, `run()`, `sleep()`, `join()`, `yield()`, and others for thread management.
 
 ## [Solved Problems](https://github.com/Prathamr-codes/Java/tree/main/SolvedProblems)
 
