@@ -8,6 +8,7 @@ package ObjectOrientedProgramming.Abstraction;
 abstract class Subject {
 
     Subject() {
+
         System.out.println("Learning Subject:");
     }
 
@@ -15,6 +16,7 @@ abstract class Subject {
     abstract void syllabus();
 
     void Learn() {
+
         System.out.println("Preparing Right Now!");
     }
 }
@@ -23,6 +25,7 @@ class IT extends Subject {
 
     @Override
     void syllabus() {
+
         System.out.println("C, Java, C++");
     }
 }
@@ -37,6 +40,3 @@ public class JavaAbstractClass {
         x.Learn();
     }
 }
-
-// Refer the GFG for detailed explanation:
-// https:// www.geeksforgeeks.org/classes-objects-java/

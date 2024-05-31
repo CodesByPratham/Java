@@ -12,11 +12,13 @@ class Student {
      * default constructor.
      */
     Student() {
+
         System.out.println("This is default constructor.");
     }
 
     // Parameterized constructor used to initialize the data members.
     Student(int rollNo, int age, int percentage, String name) {
+
         this.rollNo = rollNo;
         this.name = name;
         this.age = age;
@@ -25,6 +27,7 @@ class Student {
 
     // Copy constructor that takes an object as a parameter.
     Student(Student stu) {
+
         this.rollNo = stu.rollNo;
         this.name = stu.name;
         this.age = stu.age;
@@ -37,6 +40,7 @@ class Student {
 
     // Method to print info of student.
     public void printInfo() {
+        
         System.out.println("\nRoll No.: " + this.rollNo + "\nName: " + this.name + "\nAge: " + this.age
                 + "\nPercentage: " + this.percentage);
     }

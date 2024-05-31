@@ -40,8 +40,5 @@ public class JavaHashMap {
         // Gets the value of the given key.
         System.out.println(students.get(2));
         System.out.println(students.get(8));
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/
     }
 }

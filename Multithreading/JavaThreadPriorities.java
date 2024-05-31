@@ -13,6 +13,7 @@ class JavaThreadPriorities extends Thread {
     }
 
     public static void main(String[] args) {
+
         // Creating random threads with the help of above class
         JavaThreadPriorities t1 = new JavaThreadPriorities();
         JavaThreadPriorities t2 = new JavaThreadPriorities();
@@ -52,5 +53,6 @@ class JavaThreadPriorities extends Thread {
         Thread.currentThread().setPriority(10);
 
         System.out.println("Main thread priority : " + Thread.currentThread().getPriority());
+        
     }
 }

@@ -12,7 +12,6 @@ class MyException extends Exception {
     public MyException(String message) {
 
         super(message);
-
     }
 }
 
@@ -28,7 +27,6 @@ public class JavaUserDefinedException {
 
             System.out.println("Caught");
             System.out.println(ex.getMessage());
-
         }
     }
 }

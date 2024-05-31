@@ -7,6 +7,7 @@ public class Input_output {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         Tools.clear();
 
         System.out.print("Enter your first name :: ");
@@ -20,6 +21,5 @@ public class Input_output {
 
         System.out.println("Your roll.no : " + roll_no);
         System.out.print("Your name : " + fname + " " + lname);
-
     }
 }

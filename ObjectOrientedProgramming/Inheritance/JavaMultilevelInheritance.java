@@ -9,18 +9,18 @@ package ObjectOrientedProgramming.Inheritance;
 class Vehicle {
 
     void type() {
+
         System.out.println("Type: Car");
     }
-
 }
 
 // Second level, here the class Maruti inherits the features of class Car.
 class Maruti extends Vehicle {
 
     void brand() {
+
         System.out.println("Brand: Maruti");
     }
-
 }
 
 // Third level, here the class Maruti800 inherits the features of class Maruti
@@ -28,11 +28,13 @@ class Maruti extends Vehicle {
 class Maruti800 extends Maruti {
 
     void speed() {
+
         System.out.println("Speed: 80Kmph");
     }
 }
 
 public class JavaMultilevelInheritance {
+    
     public static void main(String[] args) {
 
         Maruti800 m = new Maruti800();

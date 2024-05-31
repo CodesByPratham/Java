@@ -4,7 +4,6 @@ package Multithreading;
 // Helper class implementing Runnable interface
 class Helper implements Runnable {
 
-    //
     public void run() {
 
         // Try block to check for exceptions
@@ -88,10 +87,10 @@ public class JavaAdvanceThreadMethods implements Runnable {
         System.out.println("thread1 waiting for thread2 to join");
 
         try {
-            thread2.join();
-        }
 
-        catch (InterruptedException e) {
+            thread2.join();
+
+        } catch (InterruptedException e) {
 
             // Display the exception along with line number
             // using printStackTrace() method
@@ -146,6 +145,7 @@ public class JavaAdvanceThreadMethods implements Runnable {
         System.out.println("Printing stack trace elements for thread1:");
 
         for (StackTraceElement e : trace) {
+
             System.out.println(e);
         }
 
@@ -155,6 +155,5 @@ public class JavaAdvanceThreadMethods implements Runnable {
         System.out.println("Does thread1 holds Lock? " + Thread.holdsLock(obj2));
 
         Thread.dumpStack();
-
     }
 }

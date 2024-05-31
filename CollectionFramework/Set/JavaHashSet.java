@@ -39,8 +39,5 @@ public class JavaHashSet {
         // Clears the HashSet.
         set.clear();
         System.out.println(set);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/hashset-in-java/
     }
 }

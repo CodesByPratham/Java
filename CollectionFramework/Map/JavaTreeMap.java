@@ -23,6 +23,7 @@ public class JavaTreeMap {
 
         // For each loop to iterate over the TreeMap.
         for (Map.Entry<Integer, String> student : students.entrySet()) {
+            
             System.out.println("Roll No: " + student.getKey() + " | Name: " + student.getValue());
         }
 
@@ -40,8 +41,5 @@ public class JavaTreeMap {
         // Gets the value of the given key.
         System.out.println(students.get(2));
         System.out.println(students.get(8));
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/treemap-in-java/
     }
 }

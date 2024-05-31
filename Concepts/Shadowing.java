@@ -5,25 +5,34 @@ public class Shadowing {
 
     public static void main(String[] args) {
 
-        System.out.println(a);// 10 normal value that was initialized globally.
-        int a;// declaration of new variable that will shadow the variable that was declared globally.
+        // 10 normal value that was initialized globally.
+        System.out.println(a);
+        // declaration of new variable that will shadow the variable that was declared
+        // globally.
+        int a;
 
-        // System.out.println(a); // throws an error cause the new variable is not initialized
+        // System.out.println(a); // throws an error cause the new variable is not
+        // initialized
+
         a = 20;
-        System.out.println(a);// 20 prints the variable that was initialized last
-        {
-            // int a=30;// throws an error cause of violation of scoping regulations
-        }
+        // 20 prints the variable that was initialized last
+        System.out.println(a);
+
+        // int a=30;// throws an error cause of violation of scoping regulations
 
         random();
     }
 
-    static void random() {// shadowing can be done in every methods that area declared statically
+    // shadowing can be done in every methods that area declared statically
+    static void random() {
 
-        System.out.println(a);// 10 shadowing hasn't started cause new variable hasn't been declared yet
+        // 10 shadowing hasn't started cause new variable hasn't been declared yet
+        System.out.println(a);
 
-        int a = 40;// shadowing starts new variable is declared
-        
-        System.out.println(a);// 40 prints the variable that was initialized last
+        // shadowing starts new variable is declared
+        int a = 40;
+
+        // 40 prints the variable that was initialized last
+        System.out.println(a);
     }
 }

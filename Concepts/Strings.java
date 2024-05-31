@@ -23,6 +23,7 @@ public class Strings {
 
         // charAt() function to access a specific character using it's index.
         for (int i = 0; i < fullName.length(); i++) {
+
             System.out.println(fullName.charAt(i));
         }
 
@@ -36,13 +37,12 @@ public class Strings {
         System.out.println(strA.compareTo(strB));
 
         // substring() function to extract a part of a string.
-        // Takes two argumnets one begining index and another ending index of the part
+        // Takes two arguments one beginning index and another ending index of the part
         // of string.
         String sentence = "My Name is Pratham Rahtod";
         String name = sentence.substring(11, 19);
         String fname = sentence.substring(11, sentence.length());
         System.out.println("Name " + name);
         System.out.println("Full Name: " + fname);
-
     }
 }

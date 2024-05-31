@@ -9,6 +9,7 @@ class Car {
 
     // Method of the class to print data.
     public void printData() {
+
         // The this keyword refers to the current object in a method or constructor.
         System.out
                 .println("\nCompany: " + this.company + "\nEngine: " + this.engine + "\nCylinders: " + this.cylinders);
@@ -42,6 +43,5 @@ public class JavaClassesAndObjects {
         Harrier.cylinders = 4;
 
         Harrier.printData();
-
     }
 }

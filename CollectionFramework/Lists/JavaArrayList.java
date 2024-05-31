@@ -39,7 +39,7 @@ public class JavaArrayList {
         nums.set(1, 77);
         System.out.println(nums);
 
-        // Returns a boolean value if the element preesent in the list.
+        // Returns a boolean value if the element present in the list.
         System.out.println(nums.contains(4));
 
         // Removes the element of given index.
@@ -52,26 +52,25 @@ public class JavaArrayList {
 
         // Iterates over the elements of the list.
         for (int i = 0; i < nums.size(); i++) {
+
             System.out.println("Number at index " + i + ": " + nums.get(i));
         }
 
         // Iterates over the list
         for (Integer element : nums) {
+            
             System.out.println("foreach element is: " + element);
         }
 
         // An iterator is an object used to iterate over the elements in a collection.
         Iterator<Integer> it = nums.iterator();
         while (it.hasNext()) {
+            
             System.out.println("Iterator: " + it.next());
         }
 
         // Clears the list.
         nums.clear();
         System.out.println(nums);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/arraylist-in-java/
-
     }
 }

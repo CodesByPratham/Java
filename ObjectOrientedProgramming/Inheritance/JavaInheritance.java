@@ -23,6 +23,7 @@ class Engineer extends Employee {
 
     // Method of class Engineer
     public void printBenefits() {
+
         System.out.println("Benefits: " + this.benefits);
     }
 
@@ -31,6 +32,7 @@ class Engineer extends Employee {
      * from class Employee.
      */
     public void printData() {
+
         System.out.println("Salary: " + this.salary + "Benefits: " + this.benefits);
     }
 }

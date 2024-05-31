@@ -4,6 +4,7 @@ package ObjectOrientedProgramming.Polymorphism;
 class Parent {
 
     void show() {
+
         System.out.println("Parent class method");
     }
 }
@@ -19,6 +20,7 @@ class Child extends Parent {
      */
     @Override
     void show() {
+        
         System.out.println("Child class method");
     }
 }

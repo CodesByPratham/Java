@@ -6,7 +6,9 @@ class ThreadOne extends Thread {
 
     @Override
     public void run() {
+
         while (i < 500) {
+
             System.out.println("Thread one is running...");
             System.out.println("Thread ID: " + this.threadId());
             i++;
@@ -20,7 +22,9 @@ class ThreadTwo extends Thread {
 
     @Override
     public void run() {
+
         while (i < 500) {
+
             System.out.println("Thread Two is running...");
             System.out.println("Thread ID: " + this.threadId());
             i++;

@@ -67,6 +67,7 @@ public class JavaCollections {
                 return o1.name.compareTo(o2.name);
             }
         });
+        
         System.out.println(students);
 
         /*
@@ -75,6 +76,5 @@ public class JavaCollections {
          */
         Collections.sort(students, (o1, o2) -> o1.name.compareTo(o2.name));
         System.out.println(students);
-
     }
 }

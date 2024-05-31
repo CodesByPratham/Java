@@ -39,8 +39,5 @@ public class JavaLinkedHashSet {
         // Clears the LinkedHashSet.
         set.clear();
         System.out.println(set);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/
     }
 }

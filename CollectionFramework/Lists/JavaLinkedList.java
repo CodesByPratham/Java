@@ -69,9 +69,5 @@ public class JavaLinkedList {
         // Clears the LinkedList.
         nums.clear();
         System.out.println(nums);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/linked-list-in-java/
-
     }
 }

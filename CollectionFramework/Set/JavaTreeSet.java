@@ -39,8 +39,5 @@ public class JavaTreeSet {
         // Clears the TreeSet.
         set.clear();
         System.out.println(set);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/treeset-in-java-with-examples/
     }
 }

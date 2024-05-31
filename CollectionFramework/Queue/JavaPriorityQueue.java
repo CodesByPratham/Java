@@ -38,8 +38,5 @@ public class JavaPriorityQueue {
 
         // Prints the PriorityQueue.
         System.out.println(queueB);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/priority-queue-class-in-java/
     }
 }

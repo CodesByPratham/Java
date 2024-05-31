@@ -12,28 +12,36 @@ package ObjectOrientedProgramming.Inheritance;
 
 // Parent class GrandFather whose properties are inherited by other classes.
 class GrandFather {
+
     public void printGrandFather() {
+
         System.out.println("He is grandfather.");
     }
 }
 
 // Class Father that inherits GrandFather properties
 class Father extends GrandFather {
+
     public void printFather() {
+
         System.out.println("He is father.");
     }
 }
 
 // Class Son that inherits Father properties
 class Son extends Father {
+
     public void printSon() {
+
         System.out.println("He is son.");
     }
 }
 
 // Class Daughter that inherits Father properties
 class Daughter extends Father {
+
     public void printDaughter() {
+
         System.out.println("She is daughter.");
     }
 }

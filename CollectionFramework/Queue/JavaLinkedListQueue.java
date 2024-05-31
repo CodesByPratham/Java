@@ -24,9 +24,5 @@ public class JavaLinkedListQueue {
 
         // Prints the topmost element.
         System.out.println(queue.peek());
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/linked-list-in-java/
-
     }
 }

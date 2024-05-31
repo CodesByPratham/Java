@@ -11,6 +11,7 @@ public class JavaThrows {
 
     // Function to check if a person is eligible to vote or not
     public static void validate(int age) throws IOException {
+
         if (age < 18) {
 
             // Throw an IOException if not eligible to vote
@@ -19,11 +20,11 @@ public class JavaThrows {
         } else {
 
             System.out.println("Person is eligible to vote!!");
-
         }
     }
 
     public static void main(String[] args) {
+
         try {
 
             validate(13);
@@ -36,5 +37,4 @@ public class JavaThrows {
 
         System.out.println("Rest of the code...");
     }
-
 }

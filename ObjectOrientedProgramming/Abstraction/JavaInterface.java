@@ -35,8 +35,8 @@ class Bicycle implements Vehicles {
     }
 
     public void printStates() {
-        System.out.println("speed: " + speed
-                + " gear: " + gear);
+
+        System.out.println("speed: " + speed + " gear: " + gear);
     }
 }
 
@@ -64,10 +64,8 @@ class Bike implements Vehicles {
     }
 
     public void printStates() {
-        System.out.println("speed: " + speed
-                + " gear: " + gear);
+        System.out.println("speed: " + speed + " gear: " + gear);
     }
-
 }
 
 public class JavaInterface {

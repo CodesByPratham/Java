@@ -25,9 +25,5 @@ public class JavaStack {
         // Pops or removes the topmost element.
         animals.pop();
         System.out.println(animals.peek());
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/stack-class-in-java/
-
     }
 }

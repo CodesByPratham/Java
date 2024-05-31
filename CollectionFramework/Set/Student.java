@@ -59,6 +59,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int hashCode() {
+        
         /*
          * It returns the hash code of the rollNo since our equality is based on this
          * field. Using Integer.hashCode(rollNo) provides a good distribution of hash
@@ -69,6 +70,7 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student that) {
+
         return this.rollNo - that.rollNo;
     }
 }

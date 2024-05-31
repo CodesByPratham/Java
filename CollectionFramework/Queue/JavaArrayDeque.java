@@ -41,9 +41,5 @@ public class JavaArrayDeque {
         // Polls or removes the last element from ArrayDeque.
         System.out.println(dequeue.pollLast());
         System.out.println("pollLast() " + dequeue);
-
-        // Refer the GFG for detailed explanation:
-        // https://www.geeksforgeeks.org/arraydeque-in-java/
-
     }
 }
