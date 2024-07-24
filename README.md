@@ -41,10 +41,14 @@ This repository contains Java programs and solved problems focusing on various J
     - Thread States
     - Main Thread
     - Thread Methods
-6. [Solved Problems](#solved-problems)
-    - Arrays
-    - Conditional Loops
-    - Methods
+6. [Generics](#generics)
+    - What are Generics?
+    - Benefits of Generics
+    - How Generics Work
+    - Type Parameters
+    - Generic Classes
+    - Generic Methods
+    - Wildcards
 
 ## [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
 
@@ -183,21 +187,42 @@ This section explores multithreading concepts in Java, enabling concurrent execu
 
 - Using important thread methods such as `start()`, `run()`, `sleep()`, `join()`, `yield()`, and others for thread management.
 
-## [Solved Problems](https://github.com/Prathamr-codes/Java/tree/main/SolvedProblems)
+## [Generics](https://github.com/Prathamr-codes/Java/tree/main/Generics)
 
-This section presents solved problems demonstrating the application of Java concepts in real-world scenarios.
+This section introduces the concept of generics in Java, which allows for type-safe operations and code reusability.
 
-### Arrays
+### What are Generics?
 
-- Solved problems involving arrays, including searching, sorting, etc.
+Generics are a feature in Java that enable you to define classes, interfaces, and methods with a placeholder for the type they operate on. This placeholder, known as a type parameter, allows for flexible and reusable code.
 
-### Conditional Loops
+### Benefits of Generics
 
-- Solved problems utilizing conditional loops like if, else, switch, etc.
+1. **Type Safety**:
+   - Generics provide compile-time type checking and help catch type-related errors early, reducing the risk of runtime exceptions.
 
-### Methods
+2. **Code Reusability**:
+   - Generics allow you to write a single class or method that can handle multiple types, avoiding the need for code duplication.
 
-- Solved problems demonstrating the use of methods to solve specific tasks.
+3. **Elimination of Casts**:
+   - By using generics, explicit type casting is unnecessary, resulting in cleaner and more maintainable code.
+
+### How Generics Work
+
+#### Type Parameters
+
+Generics use type parameters to specify the type of data a class, interface, or method will operate on. These parameters are defined within angle brackets (`<>`) and allow for type-safe operations.
+
+#### Generic Classes
+
+A generic class is a class that can operate on any type specified by a type parameter. This allows for the creation of versatile and reusable components.
+
+#### Generic Methods
+
+Generic methods are methods that use type parameters and can handle different types. They enable methods to perform operations on various types without needing multiple implementations.
+
+#### Wildcards
+
+Wildcards (`?`) represent an unknown type and provide flexibility in working with different types while maintaining type safety.
 
 ---
 
