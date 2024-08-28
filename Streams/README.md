@@ -1,5 +1,3 @@
-### README.md - Understanding I/O Streams in Java
-
 # Introduction to I/O Streams in Java
 
 I/O (Input/Output) streams in Java provide a way to handle data input and output operations. They are crucial for performing operations like reading data from files, writing data to files, and interacting with console input/output. Java provides a robust set of classes in the `java.io` package to manage I/O streams.

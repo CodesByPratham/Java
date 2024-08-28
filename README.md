@@ -5,50 +5,56 @@ This repository contains Java programs and solved problems focusing on various J
 ## Contents
 
 1. [Collection Framework](#collection-framework)
-    - Arrays Class
-    - Collections Class
-    - Lists
-    - Maps
-    - Queues
-    - Set
+   - Arrays Class
+   - Collections Class
+   - Lists
+   - Maps
+   - Queues
+   - Set
 2. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-    - Classes and Objects
-    - Inheritance
-    - Polymorphism
-    - Abstraction
-    - Encapsulation
+   - Classes and Objects
+   - Inheritance
+   - Polymorphism
+   - Abstraction
+   - Encapsulation
 3. [Basic Programming Concepts](#basic-programming-concepts)
-    - Arrays
-    - ArrayLists
-    - Methods
-    - Shadowing
-    - Type Casting
-    - Strings
+   - Arrays
+   - ArrayLists
+   - Methods
+   - Shadowing
+   - Type Casting
+   - Strings
 4. [Exceptions](#exceptions)
-    - Types of Exceptions
-        - User-Defined Exceptions
-        - Built-in Exceptions
-            - Checked Exceptions
-            - Unchecked Exceptions
-    - Throw
-    - Throws
-    - Finally
-    - Chained Exceptions
+   - Types of Exceptions
+     - User-Defined Exceptions
+     - Built-in Exceptions
+       - Checked Exceptions
+       - Unchecked Exceptions
+   - Throw
+   - Throws
+   - Finally
+   - Chained Exceptions
 5. [Multithreading](#multithreading)
-    - Basics of Multithreading
-    - Two Ways to Use Multithreading
-    - Thread Priorities
-    - Thread States
-    - Main Thread
-    - Thread Methods
+   - Basics of Multithreading
+   - Two Ways to Use Multithreading
+   - Thread Priorities
+   - Thread States
+   - Main Thread
+   - Thread Methods
 6. [Generics](#generics)
-    - What are Generics?
-    - Benefits of Generics
-    - How Generics Work
-    - Type Parameters
-    - Generic Classes
-    - Generic Methods
-    - Wildcards
+   - What are Generics?
+   - Benefits of Generics
+   - How Generics Work
+   - Type Parameters
+   - Generic Classes
+   - Generic Methods
+   - Wildcards
+7. [I/O Streams](#io-streams)
+   - Input Streams
+   - Output Streams
+   - Readers
+   - Writers
+   - File Handling
 
 ## [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
 
@@ -137,26 +143,33 @@ This section covers the concepts of handling exceptions in Java, ensuring robust
 ### Types of Exceptions
 
 #### User-Defined Exceptions
+
 - Creating custom exceptions to handle specific error scenarios.
 
 #### Built-in Exceptions
 
 ##### Checked Exceptions
+
 - Exceptions that are checked at compile-time.
 
 ##### Unchecked Exceptions
+
 - Exceptions that occur at runtime and are not checked at compile-time.
 
 ### Throw
+
 - The `throw` keyword is used to explicitly throw an exception.
 
 ### Throws
+
 - The `throws` keyword is used in method signatures to declare that a method can throw certain exceptions.
 
 ### Finally
+
 - The `finally` block contains code that is always executed, whether an exception is handled or not.
 
 ### Chained Exceptions
+
 - Chained exceptions allow an exception to maintain a cause, which is useful for debugging.
 
 ## [Multithreading](https://github.com/Prathamr-codes/Java/tree/main/Multithreading)
@@ -198,9 +211,11 @@ Generics are a feature in Java that enable you to define classes, interfaces, an
 ### Benefits of Generics
 
 1. **Type Safety**:
+
    - Generics provide compile-time type checking and help catch type-related errors early, reducing the risk of runtime exceptions.
 
 2. **Code Reusability**:
+
    - Generics allow you to write a single class or method that can handle multiple types, avoiding the need for code duplication.
 
 3. **Elimination of Casts**:
@@ -223,6 +238,33 @@ Generic methods are methods that use type parameters and can handle different ty
 #### Wildcards
 
 Wildcards (`?`) represent an unknown type and provide flexibility in working with different types while maintaining type safety.
+
+## [I/O Streams](https://github.com/Prathamr-codes/Java/tree/main/IOStreams)
+
+I/O (Input/Output) streams in Java are used to handle reading and writing data. They provide a standardized way of processing data from different sources like files, memory, and the console.
+
+### Input Streams
+
+- **InputStreamReader**: Reads bytes and decodes them into characters. It’s a bridge between byte streams and character streams. Ideal for reading text data.
+- **FileReader**: A specialized class for reading character files. It reads the content from a file and converts it into characters.
+
+### Output Streams
+
+- **OutputStreamWriter**: Encodes characters into bytes. It’s a bridge between character streams and byte streams. Used to write text data.
+- **FileWriter**: A specialized class for writing character files. It writes the content to a file as characters.
+
+### Readers
+
+- **BufferedReader**: A wrapper around a Reader class that adds buffering capabilities. It reads large chunks of data at once, improving efficiency. Useful for reading text from input streams like files or the console.
+
+### Writers
+
+- **BufferedWriter**: A wrapper around a Writer class that adds buffering capabilities. It writes large chunks of data at once, reducing the number of I/O operations. Useful for writing text to output streams like files.
+
+### File Handling
+
+- **File Class**: Represents file and directory paths. You can use it to create, delete, or check the properties of files and directories.
+- **FileReader and FileWriter**: Used for handling files at the character level. These classes allow reading and writing characters to and from files.
 
 ---
 
