@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import Tools.Tools;
 
-public class Array {
+public class JavaArrays {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class Array {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            
+
             System.out.println(arr[i]);
         }
 
@@ -47,12 +47,12 @@ public class Array {
         String[] names = new String[5];
 
         for (int i = 0; i < names.length; i++) {
-        
+
             names[i] = in.next();
         }
 
         for (int i = 0; i < names.length; i++) {
-        
+
             System.out.println(names[i]);
         }
 
@@ -60,12 +60,12 @@ public class Array {
 
         // enhanced for loop for one dimensional array.
         for (int n : arr) {
-        
+
             System.out.println(n);
         }
 
         for (String naam : names) {
-        
+
             System.out.println(naam);
         }
 
@@ -86,31 +86,31 @@ public class Array {
         int[][] arr4 = new int[3][3];
 
         for (int row = 0; row < arr4.length; row++) {
-            
+
             for (int col = 0; col < arr4[row].length; col++) {
-            
+
                 arr4[row][col] = in.nextInt();
             }
         }
 
         for (int row = 0; row < arr4.length; row++) {
-   
+
             for (int col = 0; col < arr4[row].length; col++) {
-   
+
                 System.out.print(arr4[row][col] + " ");
             }
-   
+
             System.out.println();
         }
-   
+
         for (int row = 0; row < arr4.length; row++) {
-    
+
             System.out.println(Arrays.toString(arr4[row]));
         }
 
         // enhanced for loop for two dimensional array.
         for (int[] arr5 : arr3) {
-    
+
             System.out.println(Arrays.toString(arr5));
         }
 
@@ -120,19 +120,19 @@ public class Array {
                 { 5, 6 },
                 { 7, 8, 9 }
         };
-    
+
         for (int[] arrn : arr6) {
-    
+
             System.out.println(Arrays.toString(arrn));
         }
-    
+
         for (int row = 0; row < arr6.length; row++) {
-            
+
             for (int col = 0; col < arr6[row].length; col++) {
-            
+
                 System.out.print(arr6[row][col] + " ");
             }
-            
+
             System.out.println();
         }
     }

@@ -1,6 +1,6 @@
 package Concepts;
 
-public class Methods {
+public class JavaMethods {
     public static void main(String[] args) {
 
         String greet = "pratham";

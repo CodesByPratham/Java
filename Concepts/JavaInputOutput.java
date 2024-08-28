@@ -3,7 +3,7 @@ package Concepts;
 import java.util.Scanner;
 import Tools.Tools;
 
-public class Input_output {
+public class JavaInputOutput {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {

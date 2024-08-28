@@ -2,6 +2,7 @@ package Generics;
 
 public class JavaGenericExample {
     // Generic method to swap two values
+    @SuppressWarnings("unchecked")
     public static <T1, T2> void swapValues(Pair<T1, T2> pair) {
         T1 first = pair.getFirst();
         T2 second = pair.getSecond();

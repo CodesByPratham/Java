@@ -1,6 +1,6 @@
 # Java Concepts
 
-This README.md provides an overview of fundamental Java concepts, including arrays, ArrayLists, methods, shadowing, type casting, and strings.
+This README.md provides an overview of fundamental Java concepts, including arrays, ArrayLists, methods, shadowing, type casting, strings, and the Stream API.
 
 ## Arrays
 
@@ -25,6 +25,10 @@ Type casting in Java is the process of converting one data type into another. It
 ## Strings
 
 Strings in Java are sequences of characters enclosed in double quotes. They are immutable, meaning their values cannot be changed once they are created. Java provides a rich set of methods for manipulating strings, such as concatenation, substring extraction, and searching.
+
+## Stream API
+
+The Stream API, introduced in Java 8, is a powerful tool for processing sequences of elements in a functional and declarative style. It allows developers to perform operations such as filtering, mapping, and reducing data with concise and expressive code. Streams can be created from collections, arrays, or other data sources, and support both sequential and parallel operations. Key operations include Intermediate operations and Terminal Operations. The Stream API simplifies data processing tasks, enhances code readability, and supports parallelism, making it a valuable addition to the Java language.
 
 ---
 

@@ -2,7 +2,7 @@ package Concepts;
 
 import java.util.Scanner;
 
-public class Strings {
+public class JavaStrings {
 
     public static Scanner in = new Scanner(System.in);
 

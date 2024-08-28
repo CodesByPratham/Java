@@ -1,6 +1,6 @@
 package Concepts;
 
-public class Shadowing {
+public class JavaShadowing {
     static int a = 10;
 
     public static void main(String[] args) {

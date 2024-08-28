@@ -3,7 +3,7 @@ package Concepts;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Arraylist {
+public class JavaArraylist {
 
     public static Scanner in = new Scanner(System.in);
 
