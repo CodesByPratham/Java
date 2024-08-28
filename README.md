@@ -239,7 +239,7 @@ Generic methods are methods that use type parameters and can handle different ty
 
 Wildcards (`?`) represent an unknown type and provide flexibility in working with different types while maintaining type safety.
 
-## [I/O Streams](https://github.com/Prathamr-codes/Java/tree/main/IOStreams)
+## [I/O Streams](https://github.com/Prathamr-codes/Java/tree/main/Streams)
 
 I/O (Input/Output) streams in Java are used to handle reading and writing data. They provide a standardized way of processing data from different sources like files, memory, and the console.
 
