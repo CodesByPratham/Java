@@ -16,7 +16,7 @@ class MyThread extends Thread {
         System.out.println("Name of this thread: " + getName());
 
         // Returns the identifier of this Thread.
-        System.out.println("ID of this thread: " + threadId());
+        System.out.println("ID of this thread: " + getId());
 
         // Returns this thread’s priority.
         System.out.println("Priority of this thread: " + getPriority());

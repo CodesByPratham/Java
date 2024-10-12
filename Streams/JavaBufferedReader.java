@@ -24,7 +24,7 @@ public class JavaBufferedReader {
     public static void main(String[] args) {
 
         // Reading character data from standard input (console)
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(System.in))) {
 
             // Create a character array to store the input data
             char[] charArray = new char[100];
@@ -33,7 +33,7 @@ public class JavaBufferedReader {
             System.out.print("Enter Some Letters: ");
 
             // Read characters into the array from the console
-            br.read(charArray);
+            in.read(charArray);
 
             // Display the characters entered by the user
             System.out.print("You Entered: ");
@@ -45,13 +45,13 @@ public class JavaBufferedReader {
         }
 
         // Reading character data from a file ("Streams/read.txt")
-        try (BufferedReader br = new BufferedReader(new FileReader("Streams/read.txt"))) {
+        try (BufferedReader in = new BufferedReader(new FileReader("Streams/read.txt"))) {
 
             // Create a character array to store the data read from the file
             char[] charArray = new char[100];
 
             // Read characters from the file into the array
-            br.read(charArray);
+            in.read(charArray);
 
             // Display the data read from the file
             System.out.print("Data In File: ");

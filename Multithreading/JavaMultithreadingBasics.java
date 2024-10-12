@@ -10,7 +10,7 @@ class ThreadOne extends Thread {
         while (i < 500) {
 
             System.out.println("Thread one is running...");
-            System.out.println("Thread ID: " + this.threadId());
+            System.out.println("Thread ID: " + this.getId());
             i++;
         }
     }
@@ -26,7 +26,7 @@ class ThreadTwo extends Thread {
         while (i < 500) {
 
             System.out.println("Thread Two is running...");
-            System.out.println("Thread ID: " + this.threadId());
+            System.out.println("Thread ID: " + this.getId());
             i++;
         }
     }
