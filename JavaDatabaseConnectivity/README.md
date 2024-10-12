@@ -2,8 +2,6 @@
 
 This project focuses on **JDBC (Java Database Connectivity)**, which provides a standard API for interacting with relational databases using Java. It covers key concepts, architecture, types of JDBC drivers, and practical implementation examples. Below is an overview of the key concepts discussed.
 
----
-
 ## Introduction to JDBC
 JDBC is an API that allows Java applications to connect and interact with databases. It enables querying, updating, and managing data stored in relational databases. JDBC drivers bridge Java applications and database systems.
 
@@ -12,15 +10,11 @@ JDBC is an API that allows Java applications to connect and interact with databa
 - Provides methods for SQL execution and result retrieval.
 - Supports multiple database types.
 
----
-
 ## JDBC Architecture
 JDBC is composed of three layers:
 1. **Application Layer:** Issues SQL statements.
 2. **Driver Manager Layer:** Manages communication between the application and drivers.
 3. **Database Layer:** Physically stores data.
-
----
 
 ## Types of JDBC Drivers
 1. **Type 1: JDBC-ODBC Bridge Driver**  
@@ -34,8 +28,6 @@ JDBC is composed of three layers:
 
 4. **Type 4: Native Protocol (Thin) Driver**  
    Directly communicates with the database via Java networking libraries, providing the best performance with no client-side installation.
-
----
 
 ## Basic Steps for JDBC Programming
 ### 1. Load and Register Driver:
@@ -70,8 +62,6 @@ while (rs.next()) {
 con.close();
 ```
 
----
-
 ## PreparedStatement and CallableStatement
 - **PreparedStatement** is used for executing pre-compiled SQL statements with dynamic parameters. It offers better performance for repetitive queries.
 - **CallableStatement** is used to execute stored procedures and functions.
@@ -92,16 +82,12 @@ cstmt.registerOutParameter(2, Types.INTEGER);
 cstmt.execute();
 ```
 
----
-
 ## ResultSet Interface
 **ResultSet** is used to retrieve and manipulate data returned from SQL queries. It supports iterating over rows using a cursor.
 
 Common methods:
 - `next()`: Moves the cursor to the next row.
 - `getString()`, `getInt()`: Retrieves column data from the current row.
-
----
 
 ## Transaction Management
 JDBC supports **ACID** properties (Atomicity, Consistency, Isolation, Durability) for managing transactions.
@@ -110,12 +96,8 @@ JDBC supports **ACID** properties (Atomicity, Consistency, Isolation, Durability
 - **rollback()**: Reverts changes to the last commit.
 - **savepoint()**: Sets a savepoint within a transaction for partial rollbacks.
 
----
-
 ## Error Handling in JDBC
 JDBC uses the **SQLException** class to handle errors. The `SQLException` provides methods to retrieve error details:
 - `getMessage()`: Returns the error message.
 - `getSQLState()`: Returns the SQLState string.
 - `getErrorCode()`: Returns the vendor-specific error code.
-
----
