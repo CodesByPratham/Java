@@ -55,6 +55,13 @@ This repository contains Java programs and solved problems focusing on various J
    - Readers
    - Writers
    - File Handling
+8. [JDBC Concepts](#jdbc-concepts)
+   - JDBC Architecture
+   - Types of JDBC Drivers
+   - PreparedStatement and CallableStatement
+   - ResultSet Interface
+   - Transaction Management
+   - Error Handling
 
 ## [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
 
@@ -265,6 +272,40 @@ I/O (Input/Output) streams in Java are used to handle reading and writing data. 
 
 - **File Class**: Represents file and directory paths. You can use it to create, delete, or check the properties of files and directories.
 - **FileReader and FileWriter**: Used for handling files at the character level. These classes allow reading and writing characters to and from files.
+
+## [JDBC Concepts](#https://github.com/Prathamr-codes/Java/tree/main/JavaDatabaseConnectivity)
+
+This section covers **Java Database Connectivity (JDBC)**, a core API for Java applications to interact with relational databases. JDBC enables executing SQL queries, updating data, and managing database connections seamlessly.
+
+### Key Concepts
+- **JDBC Architecture**: 
+   Consists of three layers:
+   1. **Application Layer**: Issues SQL queries.
+   2. **Driver Manager Layer**: Manages communication between the Java application and the database drivers.
+   3. **Database Layer**: The physical storage of data.
+
+- **Types of JDBC Drivers**:
+   - **Type 1 (JDBC-ODBC Bridge)**: Translates JDBC to ODBC, limited in performance.
+   - **Type 2 (Native API Driver)**: Uses native database APIs, offering better performance but less portability.
+   - **Type 3 (Network Protocol Driver)**: Interacts via a middleware server, suitable for web applications.
+   - **Type 4 (Thin Driver)**: Pure Java driver that connects directly to the database, providing optimal performance.
+
+### JDBC Programming Workflow:
+Key steps include loading the driver, establishing a database connection, executing SQL queries, processing the results using a ResultSet, and properly closing the connection.
+
+### Additional Topics:
+- **PreparedStatement and CallableStatement**: 
+   - **PreparedStatement** improves efficiency for repeated queries.
+   - **CallableStatement** is used for executing stored procedures in the database.
+
+- **ResultSet Interface**: 
+   Used to navigate and process query results returned from the database.
+
+- **Transaction Management**: 
+   Ensures consistency of data using ACID properties (Atomicity, Consistency, Isolation, Durability), along with `commit` and `rollback` operations to control transaction flow.
+
+- **Error Handling**: 
+   JDBC uses `SQLException` to handle database errors, providing insights into the error's cause and state.
 
 ---
 
