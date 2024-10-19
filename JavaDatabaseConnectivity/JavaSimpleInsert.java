@@ -10,6 +10,14 @@ public class JavaSimpleInsert {
 
     public static void main(String[] args) {
         try {
+            // Loading and registering the Oracle JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            // Establishing a connection to the database
+            // Replace <Username> and <Password> with your actual Oracle DB credentials
+            Connection con = DriverManager.getConnection(
+                    "jdbc:oracle:thin:@localhost:1521:XE", "<Username>", "<Password>");
+
             // Prompting the user to enter student details
             System.out.print("Enter student's id: ");
             int id = in.nextInt(); // Reading student ID (integer)
@@ -28,14 +36,6 @@ public class JavaSimpleInsert {
 
             System.out.print("Enter student's email: ");
             String email = in.next(); // Reading student's email (string)
-
-            // Loading and registering the Oracle JDBC driver
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-
-            // Establishing a connection to the database
-            // Replace <Username> and <Password> with your actual Oracle DB credentials
-            Connection con = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:XE", "<Username>", "<Password>");
 
             // SQL query to insert the student's data into the "students" table
             String query = "INSERT INTO students VALUES(" + id + ", '" + fname + "', '" + lname + "', " + age + ", '"

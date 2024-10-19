@@ -9,15 +9,15 @@ public class JavaSimpleDelete {
 
     public static void main(String[] args) {
         try {
-            System.out.print("Enter student's id that you wish to delete: ");
-            int id = in.nextInt();
-
             // Loading and registering the Oracle JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
-
             // Establishing a connection to the Oracle database
             Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:XE", "<Username>", "<Password>");
+
+            // Get student ID that from user from console
+            System.out.print("Enter student's id that you wish to delete: ");
+            int id = in.nextInt();
 
             // SQL query to delete the student record from the "students" table
             String query = "DELETE FROM students WHERE student_id = " + id;

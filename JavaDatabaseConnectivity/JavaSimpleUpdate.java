@@ -9,30 +9,31 @@ public class JavaSimpleUpdate {
 
     public static void main(String[] args) {
         try {
-            System.out.print("Enter student's id that you wish to change: ");
-            int id = in.nextInt();
-
-            System.out.print("Enter student's first name: ");
-            String fname = in.next();
-
-            System.out.print("Enter student's last name: ");
-            String lname = in.next();
-
-            System.out.print("Enter student's age: ");
-            int age = in.nextInt();
-
-            System.out.print("Enter student's gender: ");
-            String gender = in.next();
-
-            System.out.print("Enter student's email: ");
-            String email = in.next();
-
             // Loading and registering the Oracle JDBC driver
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             // Establishing a connection to the Oracle database
             Connection con = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:XE", "<Username>", "<Password>");
+
+            // Prompting the user to enter student details
+            System.out.print("Enter student's id that you wish to update: ");
+            int id = in.nextInt(); // Reading student ID (integer)
+
+            System.out.print("Enter student's first name: ");
+            String fname = in.next(); // Reading student's first name (string)
+
+            System.out.print("Enter student's last name: ");
+            String lname = in.next(); // Reading student's last name (string)
+
+            System.out.print("Enter student's age: ");
+            int age = in.nextInt(); // Reading student's age (integer)
+
+            System.out.print("Enter student's gender: ");
+            String gender = in.next(); // Reading student's gender (string)
+
+            System.out.print("Enter student's email: ");
+            String email = in.next(); // Reading student's email (string)
 
             // SQL query to update the student's record in the "students" table
             String query = "UPDATE students SET first_name = '" + fname + "', last_name = '" + lname + "', age = "
