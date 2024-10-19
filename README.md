@@ -273,7 +273,7 @@ I/O (Input/Output) streams in Java are used to handle reading and writing data. 
 - **File Class**: Represents file and directory paths. You can use it to create, delete, or check the properties of files and directories.
 - **FileReader and FileWriter**: Used for handling files at the character level. These classes allow reading and writing characters to and from files.
 
-## [JDBC Concepts](#https://github.com/Prathamr-codes/Java/tree/main/JavaDatabaseConnectivity)
+## [JDBC Concepts](https://github.com/Prathamr-codes/Java/tree/main/JavaDatabaseConnectivity)
 
 This section covers **Java Database Connectivity (JDBC)**, a core API for Java applications to interact with relational databases. JDBC enables executing SQL queries, updating data, and managing database connections seamlessly.
 
