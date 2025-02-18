@@ -4,26 +4,26 @@ This repository contains Java programs and solved problems focusing on various J
 
 ## Contents
 
-1. [Collection Framework](#collection-framework)
-   - Arrays Class
-   - Collections Class
-   - Lists
-   - Maps
-   - Queues
-   - Set
-2. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-   - Classes and Objects
-   - Inheritance
-   - Polymorphism
-   - Abstraction
-   - Encapsulation
-3. [Basic Programming Concepts](#basic-programming-concepts)
+1. [Basic Programming Concepts](#basic-programming-concepts)
    - Arrays
    - ArrayLists
    - Methods
    - Shadowing
    - Type Casting
    - Strings
+2. [Collection Framework](#collection-framework)
+   - Arrays Class
+   - Collections Class
+   - Lists
+   - Maps
+   - Queues
+   - Set
+3. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
+   - Classes and Objects
+   - Inheritance
+   - Polymorphism
+   - Abstraction
+   - Encapsulation
 4. [Exceptions](#exceptions)
    - Types of Exceptions
      - User-Defined Exceptions
