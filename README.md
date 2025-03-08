@@ -63,6 +63,34 @@ This repository contains Java programs and solved problems focusing on various J
    - Transaction Management
    - Error Handling
 
+## [Basic Programming Concepts](https://github.com/Prathamr-codes/Java/tree/main/Concepts)
+
+This section delves into fundamental Java concepts, providing explanations and examples for better understanding.
+
+### Arrays
+
+- Basic operations on arrays, including declaration, initialization, and manipulation.
+
+### ArrayLists
+
+- Working with ArrayLists, including adding, removing, and accessing elements dynamically.
+
+### Methods
+
+- Understanding methods in Java, including method declaration, invocation, and parameter passing.
+
+### Shadowing
+
+- Explaining variable shadowing in Java and its implications.
+
+### Type Casting
+
+- Covering type casting in Java, including implicit and explicit casting.
+
+### Strings
+
+- Operations on strings in Java, such as concatenation, substring, etc.
+
 ## [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
 
 This section covers various aspects of the Collection Framework in Java, including classes like Arrays, Collections, Lists, Maps, Queues, and Sets.
@@ -114,34 +142,6 @@ Exploring the core concepts of Object-Oriented Programming which form the founda
 ### Encapsulation
 
 - Encapsulation protects the data in an object from unwanted access by binding the data with the code that manipulates it.
-
-## [Basic Programming Concepts](https://github.com/Prathamr-codes/Java/tree/main/Concepts)
-
-This section delves into fundamental Java concepts, providing explanations and examples for better understanding.
-
-### Arrays
-
-- Basic operations on arrays, including declaration, initialization, and manipulation.
-
-### ArrayLists
-
-- Working with ArrayLists, including adding, removing, and accessing elements dynamically.
-
-### Methods
-
-- Understanding methods in Java, including method declaration, invocation, and parameter passing.
-
-### Shadowing
-
-- Explaining variable shadowing in Java and its implications.
-
-### Type Casting
-
-- Covering type casting in Java, including implicit and explicit casting.
-
-### Strings
-
-- Operations on strings in Java, such as concatenation, substring, etc.
 
 ## [Exceptions](https://github.com/Prathamr-codes/Java/tree/main/Exceptions)
 
