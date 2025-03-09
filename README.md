@@ -316,8 +316,6 @@ Key steps include loading the driver, establishing a database connection, execut
 
 ## [Java Server Pages](https://github.com/Prathamr-codes/Java/tree/main/JavaServerPages)
 
-Java Server Pages (JSP) is a technology used to create dynamic web applications in Java. JSP allows embedding Java code within HTML pages and provides built-in objects and custom tag libraries for seamless development.
-
 JSP is a server-side technology that enables developers to create web pages with dynamic content by embedding Java within HTML. It simplifies web development compared to Servlets by providing a more readable and maintainable structure.
 
 ### JSP API & Lifecycle
