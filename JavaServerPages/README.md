@@ -123,4 +123,6 @@ JSP supports XML data processing using **JSTL and DOM parsing**.
 1. **Set up Tomcat 10+** in **NetBeans**.
 2. **Ensure required `.jar` files** are in `WEB-INF/lib`.
 3. **Run the JSP files** from **NetBeans** (Right-click → Run).
-4. **Access JSP pages** via `http://localhost:8080/your-project-name/yourfile.jsp`
+4. **Access JSP pages** via `http://localhost:8080/JavaServerPages/yourfile.jsp`
+
+This README.md provides a brief overview of the key concepts within the Java Server Pages. For more detailed information and examples, refer to the respective Java documentation or explore the source code provided in this repository.
