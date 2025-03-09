@@ -1,4 +1,4 @@
-# JSP (Java Server Pages) - Complete Guide
+# JSP (Java Server Pages)
 
 ## Overview
 Java Server Pages (JSP) is a technology used to create **dynamic web applications** in Java. JSP simplifies the development process by allowing Java code to be embedded within HTML. This guide covers **theoretical concepts** and **practical examples** based on the provided PDF.
@@ -66,7 +66,10 @@ JSP provides **action tags** for dynamic operations:
 - `<jsp:setProperty>` – Sets properties in a JavaBean.
 - `<jsp:getProperty>` – Retrieves properties from a JavaBean.
 
-**Practical Example:** [/jspActions.jsp](web/jspActions.jsp)
+**Practical Example:** 
+- [/jspActions.jsp](web/jspInclude.jsp)
+- [/jspForward.jsp](web/jspForward.jsp)
+- [/JspUseBean.jsp](web/JspUseBean.jsp)
 
 ### 6. JSP Session Tracking
 Session tracking allows **maintaining user-specific data** across multiple requests:
@@ -91,8 +94,8 @@ Custom tags allow creating **reusable components** for JSP pages.
 - Registered via **TLD (Tag Library Descriptor) files**.
 
 **Practical Example:**
-- [/CustomHelloTag.java](/src/java/beans/CustomHelloTag.java)
-- [/customtags.tld](/web/WEB-INF/tlds/customtags.tld)
+- [/CustomHelloTag.java](src/java/beans/CustomHelloTag.java)
+- [/customtags.tld](web/WEB-INF/tlds/customtags.tld)
 - [/jspCustomTag.jsp](web/jspCustomTag.jsp)
 
 ### 9. JSP Exception Handling
