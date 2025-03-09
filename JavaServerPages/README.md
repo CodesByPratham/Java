@@ -83,7 +83,7 @@ JSTL provides a set of standard tags to avoid scriptlet code:
 - **Formatting Tags (`fmt:`)** – Date & currency formatting.
 - **Functions (`fn:`)** – String manipulations.
 
-**Practical Example:** [/jspTagLib.jsp](web/jspTagLib.jsp)
+**Practical Example:** [/jspTagLib.jsp](web/jspTaglib.jsp)
 
 ### 8. JSP Custom Tags
 Custom tags allow creating **reusable components** for JSP pages.
@@ -105,7 +105,7 @@ Exception handling in JSP:
 ### 10. JSP XML Processing
 JSP supports XML data processing using **JSTL and DOM parsing**.
 
-**Practical Example:** [/jspTagLib.jsp](web/jspTagLib.jsp)
+**Practical Example:** [/jspTagLib.jsp](web/jspTaglib.jsp)
 
 ## Running the Project
 1. **Set up Tomcat 10+** in **NetBeans**.
