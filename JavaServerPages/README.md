@@ -28,7 +28,7 @@ JSP follows a **five-phase lifecycle**:
 4. **Execution Phase:** The `_jspService()` method processes requests.
 5. **Destruction Phase:** The `jspDestroy()` method is called when the page is removed from memory.
 
-**Practical Example:** `src/main/webapp/JspLifeCycleExample.jsp`
+**Practical Example:** [/jspLifeCycle.jsp](web/jspLifeCycle.jsp)
 
 ### 3. JSP Implicit Objects
 JSP provides **9 built-in objects** that can be used without declaration:
@@ -42,7 +42,7 @@ JSP provides **9 built-in objects** that can be used without declaration:
 - `page` – Represents the JSP instance.
 - `exception` – Handles exceptions in error pages.
 
-**Practical Example:** `src/main/webapp/JspImplicitObjectsExample.jsp`
+**Practical Example:** [/jspImplicitObjects.jsp](web/jspImplicitObjects.jsp)
 
 ### 4. JSP Scope & Directives
 JSP provides **four scopes** to store data:
@@ -56,7 +56,7 @@ JSP Directives:
 - `<%@ include %>` – Includes static content.
 - `<%@ taglib %>` – Registers custom tag libraries.
 
-**Practical Example:** `src/main/webapp/JspScopeExample.jsp`
+**Practical Example:** [/jspScope.jsp](web/jspScope.jsp)
 
 ### 5. JSP Actions
 JSP provides **action tags** for dynamic operations:
@@ -66,58 +66,46 @@ JSP provides **action tags** for dynamic operations:
 - `<jsp:setProperty>` – Sets properties in a JavaBean.
 - `<jsp:getProperty>` – Retrieves properties from a JavaBean.
 
-**Practical Example:** `src/main/webapp/JspActionsExample.jsp`
+**Practical Example:** [/jspActions.jsp](web/jspActions.jsp)
 
-### 6. JSP MVC Architecture
-The **MVC (Model-View-Controller) pattern** separates business logic from the presentation layer:
-- **Model:** Represents business logic (JavaBeans, DAO classes).
-- **View:** Handles the user interface (JSP pages).
-- **Controller:** Manages request processing (Servlets).
-
-**Practical Example:**
-- `src/main/java/beans/UserBean.java`
-- `src/main/java/controllers/UserController.java`
-- `src/main/webapp/userForm.jsp`
-- `src/main/webapp/userDetails.jsp`
-
-### 7. JSP Session Tracking
+### 6. JSP Session Tracking
 Session tracking allows **maintaining user-specific data** across multiple requests:
 - **HttpSession:** Stores session data on the server.
 - **Cookies:** Stores small amounts of data on the client’s browser.
 
 **Practical Example:**
-- `src/main/webapp/JspSessionExample.jsp`
-- `src/main/webapp/JspCookieExample.jsp`
+- [/jspSession.jsp](web/jspSession.jsp)
+- [/jspCookie.jsp](web/jspCookie.jsp)
 
-### 8. JSP Standard Tag Library (JSTL)
+### 7. JSP Standard Tag Library (JSTL)
 JSTL provides a set of standard tags to avoid scriptlet code:
 - **Core Tags (`c:`)** – Loops, conditions, variables.
 - **Formatting Tags (`fmt:`)** – Date & currency formatting.
 - **Functions (`fn:`)** – String manipulations.
 
-**Practical Example:** `src/main/webapp/JstlCompleteExample.jsp`
+**Practical Example:** [/jspTagLib.jsp](web/jspTagLib.jsp)
 
-### 9. JSP Custom Tags
+### 8. JSP Custom Tags
 Custom tags allow creating **reusable components** for JSP pages.
 - Defined using **Tag Handler Classes**.
 - Registered via **TLD (Tag Library Descriptor) files**.
 
 **Practical Example:**
-- `src/main/java/customtags/CustomHelloTag.java`
-- `src/main/webapp/WEB-INF/customtags.tld`
-- `src/main/webapp/JspCustomTagExample.jsp`
+- [/CustomHelloTag.java](/src/java/beans/CustomHelloTag.java)
+- [/customtags.tld](/web/WEB-INF/tlds/customtags.tld)
+- [/jspCustomTag.jsp](web/jspCustomTag.jsp)
 
-### 10. JSP Exception Handling
+### 9. JSP Exception Handling
 Exception handling in JSP:
 - Using **try-catch** blocks inside JSP.
 - Redirecting to **custom error pages** using `isErrorPage` and `errorPage` attributes.
 
-**Practical Example:** `src/main/webapp/JspExceptionHandlingExample.jsp`
+**Practical Example:** [/jspImplicitObjects.jsp](web/jspImplicitObjects.jsp)
 
-### 11. JSP XML Processing
+### 10. JSP XML Processing
 JSP supports XML data processing using **JSTL and DOM parsing**.
 
-**Practical Example:** `src/main/webapp/JspXmlProcessingExample.jsp`
+**Practical Example:** [/jspTagLib.jsp](web/jspTagLib.jsp)
 
 ## Running the Project
 1. **Set up Tomcat 10+** in **NetBeans**.
