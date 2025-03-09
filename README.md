@@ -62,6 +62,13 @@ This repository contains Java programs and solved problems focusing on various J
    - ResultSet Interface
    - Transaction Management
    - Error Handling
+9. [Java Server Pages](#jsp)
+   - JSP API & Lifecycle
+   - JSP Implicit Objects
+   - JSP Directives
+   - JSP Actions
+   - JSP Standard Tag Library (JSTL)
+   - JSP Custom Tags
 
 ## [Basic Programming Concepts](https://github.com/Prathamr-codes/Java/tree/main/Concepts)
 
@@ -306,6 +313,33 @@ Key steps include loading the driver, establishing a database connection, execut
 
 - **Error Handling**: 
    JDBC uses `SQLException` to handle database errors, providing insights into the error's cause and state.
+
+## [Java Server Pages](https://github.com/Prathamr-codes/Java/tree/main/JavaServerPages)
+
+Java Server Pages (JSP) is a technology used to create dynamic web applications in Java. JSP allows embedding Java code within HTML pages and provides built-in objects and custom tag libraries for seamless development.
+
+JSP is a server-side technology that enables developers to create web pages with dynamic content by embedding Java within HTML. It simplifies web development compared to Servlets by providing a more readable and maintainable structure.
+
+### JSP API & Lifecycle
+JSP follows a lifecycle consisting of initialization (`jspInit()`), request processing (`_jspService()`), and destruction (`jspDestroy()`). This ensures efficient memory management and request handling.
+
+### JSP Implicit Objects
+JSP provides built-in objects like `request`, `response`, `session`, and `application`, which help manage user input, output, and session tracking without requiring explicit instantiation.
+
+### JSP Directives
+Directives in JSP define page-level settings. The `page` directive configures the JSP environment, the `include` directive inserts external content, and the `taglib` directive allows the use of custom tag libraries.
+
+### JSP Actions
+JSP actions like `<jsp:include>`, `<jsp:forward>`, and JavaBean operations (`<jsp:useBean>`, `<jsp:setProperty>`, `<jsp:getProperty>`) help manage dynamic content, request forwarding, and JavaBean interactions.
+
+### JSP Session Tracking
+JSP provides `HttpSession` for maintaining user-specific data across multiple pages. Cookies can also be used to store small amounts of client-side data for tracking user preferences.
+
+### JSP Standard Tag Library (JSTL)
+JSTL simplifies JSP coding by providing tags for core operations (`c:` for loops and conditions), formatting (`fmt:` for dates and currency), and functions (`fn:` for string manipulation).
+
+### JSP Custom Tags
+Custom tags allow the creation of reusable components for JSP. These tags are defined in a Tag Library Descriptor (TLD) file and used in JSP pages, improving code modularity and reusability.
 
 ---
 
