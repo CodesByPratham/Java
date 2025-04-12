@@ -126,10 +126,4 @@ You can build applications covering:
 
 ---
 
-## References
-- [Servlet API Docs](https://docs.oracle.com/javaee/7/api/javax/servlet/package-summary.html)
-- [Java EE Tutorials](https://docs.oracle.com/javaee/7/tutorial/servlets.htm)
-
----
-
 This README provides a complete theoretical and practical overview of **Java Servlets**, ideal for learners and developers building web apps using Java EE.
