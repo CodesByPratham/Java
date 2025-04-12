@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
+    <filter>
+        <filter-name>NewFilter</filter-name>
+        <filter-class>javaServlets.NewFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>javaServlets.MyFilter</filter-class>
+        <!-- Init param passed to the filter -->
+        <init-param>
+            <param-name>Pratham</param-name>
+            <param-value>Core Java</param-value>
+            <!-- Change to "Core Java" to block servlet -->
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <servlet-name>MyServlet</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>NewFilter</filter-name>
+        <servlet-name>HelloWorld</servlet-name>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>javaServlets.HelloWorld</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenericServletJava</servlet-name>
+        <servlet-class>javaServlets.GenericServletJava</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <servlet-class>javaServlets.ServletLifeCycle</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaHttpServlet</servlet-name>
+        <servlet-class>javaServlets.JavaHttpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostResult</servlet-name>
+        <servlet-class>resources.PostResult</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostRequest</servlet-name>
+        <servlet-class>javaServlets.PostRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <!-- The name of the servlet -->
+        <servlet-name>JavaServletConfig</servlet-name>
+        <!-- Fully qualified class name of the servlet -->
+        <servlet-class>javaServlets.JavaServletConfig</servlet-class>
+        <!-- Multiple initialization parameters for the servlet -->
+        <init-param>
+            <!-- Parameter name: Kritika -->
+            <param-name>Kritika</param-name>
+            <!-- Parameter value: Core Java -->
+            <param-value>Core Java</param-value>
+        </init-param>
+        <init-param>
+            <!-- Parameter name: Pratham -->
+            <param-name>Pratham</param-name>
+            <!-- Parameter value: Advance Java -->
+            <param-value>Advance Java</param-value>
+        </init-param>
+        <init-param>
+            <!-- Parameter name -->
+            <param-name>driver</param-name>
+            <!-- Parameter value -->
+            <param-value>oracle.jdbc.OracleDriver</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaServletContext</servlet-name>
+        <servlet-class>javaServlets.JavaServletContext</servlet-class>
+    </servlet>
+    <!-- Defining a context parameter that can be shared by all servlets in this web application -->
+    <context-param>
+        <!-- Parameter name -->
+        <param-name>Pratham</param-name>
+        <!-- Parameter value -->
+        <param-value>Advance Java</param-value>
+    </context-param>
+    <!-- Defining multiple context parameters -->
+    <context-param>
+        <param-name>Oracle</param-name>
+        <param-value>oracle.jdbc.OracleDriver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>Kritika</param-name>
+        <param-value>Core Java</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>AttributeScopeSet</servlet-name>
+        <servlet-class>javaServlets.AttributeScopeSet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AttributeScopeGet</servlet-name>
+        <servlet-class>resources.AttributeScopeGet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaRequestDispatcher</servlet-name>
+        <servlet-class>javaServlets.JavaRequestDispatcher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RequestDispatcherMethods</servlet-name>
+        <servlet-class>resources.RequestDispatcherMethods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WelcomePage</servlet-name>
+        <servlet-class>resources.WelcomePage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaServletFilter</servlet-name>
+        <servlet-class>javaServlets.JavaServletFilter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>resources.OrderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>resources.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>resources.MyServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionTracking</servlet-name>
+        <servlet-class>javaServlets.SessionTracking</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HiddenFormField</servlet-name>
+        <servlet-class>resources.HiddenFormField</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>URLRewriting</servlet-name>
+        <servlet-class>resources.URLRewriting</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaSession</servlet-name>
+        <servlet-class>resources.JavaSession</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>JavaCookies</servlet-name>
+        <servlet-class>resources.JavaCookies</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayServlet</servlet-name>
+        <servlet-class>resources.DisplayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenericServletJava</servlet-name>
+        <url-pattern>/GenericServletJava</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <url-pattern>/ServletLifeCycle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaHttpServlet</servlet-name>
+        <url-pattern>/JavaHttpServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostResult</servlet-name>
+        <url-pattern>/PostResult</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostRequest</servlet-name>
+        <url-pattern>/PostRequest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaServletConfig</servlet-name>
+        <url-pattern>/JavaServletConfig</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaServletContext</servlet-name>
+        <url-pattern>/JavaServletContext</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AttributeScopeSet</servlet-name>
+        <url-pattern>/AttributeScopeSet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AttributeScopeGet</servlet-name>
+        <url-pattern>/AttributeScopeGet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaRequestDispatcher</servlet-name>
+        <url-pattern>/JavaRequestDispatcher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RequestDispatcherMethods</servlet-name>
+        <url-pattern>/RequestDispatcherMethods</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WelcomePage</servlet-name>
+        <url-pattern>/WelcomePage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaServletFilter</servlet-name>
+        <url-pattern>/JavaServletFilter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionTracking</servlet-name>
+        <url-pattern>/SessionTracking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HiddenFormField</servlet-name>
+        <url-pattern>/HiddenFormField</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>URLRewriting</servlet-name>
+        <url-pattern>/URLRewriting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaSession</servlet-name>
+        <url-pattern>/JavaSession</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JavaCookies</servlet-name>
+        <url-pattern>/JavaCookies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayServlet</servlet-name>
+        <url-pattern>/DisplayServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
