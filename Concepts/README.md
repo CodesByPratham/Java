@@ -81,8 +81,6 @@ Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang
 
 ## How java code works
 
-# Java Code Execution Flow Diagram
-
                                     +-------------------+
                                     |   Source Code     |
                          +--------->|                   |
@@ -161,7 +159,6 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
 ## Java architecture
 
-```
 +-----------------------------------------------------+
 | JDK = JRE + Development Tools                       |
 | (Java Development Kit)                              |
@@ -179,7 +176,6 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 |   |   +-------------------------------------+   |   |
 |   +---------------------------------------------+   |
 +-----------------------------------------------------+
-```
 
 - JDK(Java Developement Kit)
   Provides environment to develop and run Java program.
@@ -224,7 +220,6 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
   - Manages memory by clearing unused objects.
 
-```
                Compile Time                    Runtime
                ------------                    -------
               +------------+             +------------------+
@@ -250,7 +245,6 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
                                             +--------------+
                                             |   Hardware   |
                                             +--------------+
-```
 
 - How JVM works:
   Class Loader:
