@@ -92,18 +92,144 @@ Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang
   }
   ```
 - The Java Compiler (javac) converts the .java file into bytecode, which is stored in a .class file.
-  - Bytecode is a platform-independent, intermediate representation of the code.
-  ```Command
+  Bytecode is a platform-independent, intermediate representation of the code.
+  ```bash
   javac HelloWorld.java
   ```
 - The Java Class Loader (part of the Java Virtual Machine, JVM) loads the .class file into memory.
 - The JVM verifies the bytecode to ensure it adheres to Java's security and integrity rules, preventing malicious or corrupted code from executing.
 - The JVM interprets or compiles the bytecode into machine code using:
-  - Interpreter: Executes bytecode line by line (slower).
-  - Just-In-Time (JIT) Compiler: Converts frequently used bytecode into native machine code for faster execution.
+  Interpreter: Executes bytecode line by line (slower).
+  Just-In-Time (JIT) Compiler: Converts frequently used bytecode into native machine code for faster execution.
+  ```bash
+  java HelloWorld
+  ```
 - The JVM provides a runtime environment, managing memory (via Garbage Collection), threads, and other resources during execution.
+  ```output
+  Hello, World!
+  ```
 
 This process ensures Java's "Write Once, Run Anywhere" capability, as the bytecode can run on any platform with a compatible JVM.
+
+## Platform Independence
+
+- It means that byte code can run on all operating systems.
+- We need to convert source code to machine code so computer can understand
+- Compiler helps in doing this by turning it into executable code
+- this executable code is a set of instructions for the computer
+- After compiling C/C++ code we get .exe file which is platform dependent
+- In Java we get bytecode, JVM converts this to machine code
+- Java is platform-independent but JVM is platform dependent
+
+## Java architecture
+
+```
++-----------------------------------------------------+
+| JDK = JRE + Development Tools                       |
+| (Java Development Kit)                              |
+|                                                     |
+|   +---------------------------------------------+   |
+|   | JRE = JVM + Library Classes                 |   |
+|   | (Java Runtime Environment)                  |   |
+|   |                                             |   |
+|   |   +-------------------------------------+   |   |
+|   |   | Java Virtual Machine (JVM)          |   |   |
+|   |   |                                     |   |   |
+|   |   |   +---------------------------+     |   |   |
+|   |   |   | JIT (Just-In-Time)        |     |   |   |
+|   |   |   +---------------------------+     |   |   |
+|   |   +-------------------------------------+   |   |
+|   +---------------------------------------------+   |
++-----------------------------------------------------+
+```
+
+- JDK(Java Developement Kit)
+  Provides environment to develop and run Java program.
+  It provides packages that includes:
+
+  - Development tools to provide an environment to develop your program.
+  - JRE to execute your program.
+  - A compiler - javac
+  - Archiver - .jar
+  - Docs generator - javadoc
+  - interpreter/loader
+
+- JRE(Java Runtime Environment)
+  It is an installation prackage that provides environment to only run the program.
+  It consists of:
+
+  - Deployment technologies
+  - User interface technologies.
+  - Integration libraries
+  - Base libraries
+  - JVM
+
+  After we get the .class file, the next thing happen at rutime:
+
+  - Class loader loads all the classes needed to execute the program in the memory.
+  - JVM sends the code to byte code verifier to check the format of the code.
+
+- JVM(Java Virtual Machine)
+  Interpreter:
+
+  - Executes code line by line.
+  - If a method is called repeatedly,
+    it's re-interpreted each time.
+
+  JIT (Just-In-Time):
+
+  - Converts frequently-used methods into machine code.
+  - Avoids re-interpretation.
+  - Improves performance.
+
+  Garbage Collector:
+
+  - Manages memory by clearing unused objects.
+
+```
+                Compile Time                                Runtime
+                ------------                                -------
+              +-------------+                        +------------------+
+              |  .java file  |                        |   Class Loader    |
+              +-------------+                        +------------------+
+                     |                                         |
+       javac         |                                         v
+ (compilation)       v                                +----------------------+
+              +--------------+                       |  Byte Code Verifier   |
+              |  .class file  |                       +----------------------+
+              +--------------+                                 |
+                                                              v
+                                                       +---------------+
+                                                       |  Interpreter  |
+                                                       +---------------+
+                                                              |
+                                                              v
+                                                       +--------------+
+                                                       |   Runtime     |
+                                                       +--------------+
+                                                              |
+                                                              v
+                                                       +--------------+
+                                                       |   Hardware    |
+                                                       +--------------+
+```
+
+- How JVM works:
+  Class Loader:
+
+  - Loading:
+    - Reads .class file, generates binary data.
+    - Creates object in heap.
+  - Linking:
+    - Verifies .class file.
+    - Allocates memory for class variables & default values.
+    - Replaces symbolic refs with direct refs.
+  - Initialization:
+    - Assigns values to static variables and blocks.
+
+  JVM contains:
+
+  - Stack and Heap memory allocations.
 
 ## Arrays
 
