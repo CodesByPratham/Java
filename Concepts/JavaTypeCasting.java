@@ -13,6 +13,5 @@ public class JavaTypeCasting {
         int num = (int) (n);
 
         System.out.println(num);
-
     }
 }

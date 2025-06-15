@@ -285,26 +285,26 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
          | Primitive Data Types  |                   | Non-Primitive Data Types   |
          +-----------+-----------+                   +-------------+--------------+
                      |                                             |
-                     |                                             v 
+                     |                                             v
       +--------------+----------------+                 +---------------------+
       |                               |                 |        String       |
       |                               |                 |        Array        |
       v                               v                 |        etc          |
- +---------+                   +-------------+          +---------------------+                          
+ +---------+                   +-------------+          +---------------------+
  | Numeric |                   | Non-Numeric |
- +----+----+                   +------+------+     
-      |                               |  
-      |                               v    
-      |    +----------+          +----------+                 
+ +----+----+                   +------+------+
+      |                               |
+      |                               v
+      |    +----------+          +----------+
       +--->| Integer  |          | Boolean  |
       |    +----+-----+          +----------+
-      |         |                            
+      |         |
       |         +--> byte
       |         +--> short
       |         +--> int
       |         +--> long
       |
-      |    +----------------+                 
+      |    +----------------+
       +--->| Floating Point |
            +-------+--------+
                    |
@@ -313,8 +313,8 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
 ```
 
-- Primitive Data Types in Java
-  Primitive data types in Java store only single values and do not provide additional functionality. Java defines 8 primitive data types, as described in the table below:
+- Primitive Data Types
+  Primitive data types store only single values and do not provide additional functionality. Java defines 8 primitive data types, as described in the table below:
 
   | Type    | Description                    | Default  | Size                             | Example Literals                                   | Range of Values                                         |
   | ------- | ------------------------------ | -------- | -------------------------------- | -------------------------------------------------- | ------------------------------------------------------- |
@@ -327,6 +327,57 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
   | float   | 32-bit IEEE 754 floating-point | 0.0f     | 4 bytes                          | `3.14f`, `-1.23e-10f`                              | ~6-7 significant decimal digits                         |
   | double  | 64-bit IEEE 754 floating-point | 0.0d     | 8 bytes                          | `3.1415d`, `1.23e100d`                             | ~15-16 significant decimal digits                       |
 
+- Non Primitive Data Types
+  The Non-Primitive (Reference) Data Types will contain a memory address of variable values because the reference types won’t store the variable value directly in memory. They are strings, objects, arrays, etc.
+
+## Types of variables
+
+- Local Variables:
+  Local variables are declared inside a method, constructor, or block and are only accessible within that scope. They must be initialized before use.
+
+  ```java
+  public class Example {
+      public void showNumber() {
+          int number = 10; // Local variable
+          System.out.println(number);
+      }
+  }
+  ```
+
+- Instance Variables:
+  Instance variables are declared inside a class but outside any method or constructor. They are associated with an object and each object has its own copy.
+
+  ```java
+  public class Person {
+    String name; // Instance variable
+
+    public void display() {
+        System.out.println("Name: " + name);
+    }
+  }
+  ```
+
+- Static Variables
+  Static variables are also declared inside a class but with the static keyword. They belong to the class rather than any instance and are shared across all objects.
+
+  ```java
+  public class Counter {
+      static int count = 0; // Static variable
+
+      public Counter() {
+          count++;
+          System.out.println("Count: " + count);
+      }
+  }
+  ```
+
+## Shadowing
+
+Shadowing occurs in Java when a variable declared within a certain scope has the same name as a variable declared in an outer scope. In such cases, the inner variable "shadows" the outer variable, making it inaccessible within that scope.
+
+## Type Casting
+
+Type casting in Java is the process of converting one data type into another. It can be either implicit or explicit. Implicit type casting (widening) occurs when converting from a smaller data type to a larger data type, while explicit type casting (narrowing) requires an explicit cast operator and may result in data loss.
 
 ## Arrays
 
@@ -340,13 +391,6 @@ ArrayLists in Java are dynamic arrays that can grow and shrink in size dynamical
 
 Methods in Java are blocks of code that perform a specific task and are reusable. They are declared within a class and can be called from other parts of the program. Methods can have parameters and return values, or they can be void.
 
-## Shadowing
-
-Shadowing occurs in Java when a variable declared within a certain scope has the same name as a variable declared in an outer scope. In such cases, the inner variable "shadows" the outer variable, making it inaccessible within that scope.
-
-## Type Casting
-
-Type casting in Java is the process of converting one data type into another. It can be either implicit or explicit. Implicit type casting (widening) occurs when converting from a smaller data type to a larger data type, while explicit type casting (narrowing) requires an explicit cast operator and may result in data loss.
 
 ## Strings
 
@@ -359,3 +403,5 @@ The Stream API, introduced in Java 8, is a powerful tool for processing sequence
 ---
 
 This README.md provides a brief overview of fundamental Java concepts. For more detailed explanations and examples, refer to the respective Java documentation or explore the source code provided in this repository.
+
+```
