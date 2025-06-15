@@ -5,12 +5,12 @@ This repository contains Java programs and solved problems focusing on various J
 ## Contents
 
 1. [Basic Programming Concepts](https://github.com/Prathamr-codes/Java/tree/main/Concepts)
+   - Strings
+   - Methods
+   - Type Casting
    - Arrays
    - ArrayLists
-   - Methods
    - Shadowing
-   - Type Casting
-   - Strings
 2. [Collection Framework](https://github.com/Prathamr-codes/Java/tree/main/CollectionFramework)
    - Arrays Class
    - Collections Class
