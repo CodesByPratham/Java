@@ -81,7 +81,45 @@ Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang
 
 ## How java code works
 
-<img src="http://www.btechsmartclass.com/java/java_images/Execution_of_Java_Program.jpg" height=400 width=800 alt="register" />
+# Java Code Execution Flow Diagram
+
+                                    +-------------------+
+                                    |   Source Code     |
+                         +--------->|                   |
+                         |          |   Sample.java     |
+                         |          +--------+----------+
+                         |                   |
+             Compilation |                   | javac
+               Errors    |                   v
+                         |          +-------------------+
+                         |          |    Compiler       |
+                         |          +--------+----------+
+                         |                   |
+                         +-------------------+
+                                             |
+                                             |
+                                             |
+                                             |
+                                             v
+                                   +-------------------+
+                                   |     Bytecode      |
+                                   |                   |
+                                   |   Sample.class    |
+                                   +--------+----------+
+                                            |
+                                            |
+                                            v
+                                   +-------------------+
+                                   |        JVM        |
+                                   +-------------------+
+                                            |
+              +------------------+----------+----------+------------------+
+              |                  |                     |                  |
+              v                  v                     v                  v
+     +----------------+  +----------------+   +----------------+  +----------------+
+     |  Windows OS    |  |   UNIX OS      |   |   Mac OS       |  |  Mobile OS     |
+     | (Machine Code) |  | (Machine Code) |   | (Machine Code) |  | (Machine Code) |
+     +----------------+  +----------------+   +----------------+  +----------------+
 
 - Java code is written in a .java file using a text editor or an Integrated Development Environment (IDE).
   ```java
@@ -187,31 +225,31 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
   - Manages memory by clearing unused objects.
 
 ```
-                Compile Time                                Runtime
-                ------------                                -------
-              +-------------+                        +------------------+
-              |  .java file  |                        |   Class Loader    |
-              +-------------+                        +------------------+
-                     |                                         |
-       javac         |                                         v
- (compilation)       v                                +----------------------+
-              +--------------+                       |  Byte Code Verifier   |
-              |  .class file  |                       +----------------------+
-              +--------------+                                 |
-                                                              v
-                                                       +---------------+
-                                                       |  Interpreter  |
-                                                       +---------------+
-                                                              |
-                                                              v
-                                                       +--------------+
-                                                       |   Runtime     |
-                                                       +--------------+
-                                                              |
-                                                              v
-                                                       +--------------+
-                                                       |   Hardware    |
-                                                       +--------------+
+               Compile Time                    Runtime
+               ------------                    -------
+              +------------+             +------------------+
+              | .java file |             |    Class Loader  |
+              +------------+             +------------------+
+                     |                             |
+              javac  |                             v
+       (compilation) v                  +----------------------+
+              +--------------+          | Byte Code Verifier   |
+              |  .class file |          +----------------------+
+              +--------------+                     |
+                                                   v
+                                            +---------------+
+                                            |  Interpreter  |
+                                            +---------------+
+                                                   |
+                                                   v
+                                            +--------------+
+                                            |   Runtime    |
+                                            +--------------+
+                                                   |
+                                                   v
+                                            +--------------+
+                                            |   Hardware   |
+                                            +--------------+
 ```
 
 - How JVM works:
@@ -230,6 +268,23 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
   JVM contains:
 
   - Stack and Heap memory allocations.
+
+## Datatypes
+
+- Primitive Data Types in Java
+  Primitive data types in Java store only single values and do not provide additional functionality. Java defines 8 primitive data types, as described in the table below:
+
+  | Type    | Description                    | Default  | Size                             | Example Literals                                   | Range of Values                                         |
+  | ------- | ------------------------------ | -------- | -------------------------------- | -------------------------------------------------- | ------------------------------------------------------- |
+  | boolean | true or false                  | false    | JVM-dependent (typically 1 byte) | `true`, `false`                                    | `true`, `false`                                         |
+  | byte    | 8-bit signed integer           | 0        | 1 byte                           | _(none)_                                           | -128 to 127                                             |
+  | char    | Unicode character (16-bit)     | `\u0000` | 2 bytes                          | `'a'`, `'\u0041'`, `'\101'`, `'\\'`, `'\n'`, `'β'` | 0 to 65,535 (unsigned)                                  |
+  | short   | 16-bit signed integer          | 0        | 2 bytes                          | _(none)_                                           | -32,768 to 32,767                                       |
+  | int     | 32-bit signed integer          | 0        | 4 bytes                          | `-2`, `0`, `1`                                     | -2,147,483,648 to 2,147,483,647                         |
+  | long    | 64-bit signed integer          | 0L       | 8 bytes                          | `-2L`, `0L`, `1L`                                  | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+  | float   | 32-bit IEEE 754 floating-point | 0.0f     | 4 bytes                          | `3.14f`, `-1.23e-10f`                              | ~6-7 significant decimal digits                         |
+  | double  | 64-bit IEEE 754 floating-point | 0.0d     | 8 bytes                          | `3.1415d`, `1.23e100d`                             | ~15-16 significant decimal digits                       |
+
 
 ## Arrays
 
