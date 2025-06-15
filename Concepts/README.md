@@ -163,18 +163,18 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
 ```
 +-----------------------------------------------------+
-| JDK = JRE + Development Tools                       |
-| (Java Development Kit)                              |
+|           JDK = JRE + Development Tools             |
+|              (Java Development Kit)                 |
 |                                                     |
 |   +---------------------------------------------+   |
-|   | JRE = JVM + Library Classes                 |   |
-|   | (Java Runtime Environment)                  |   |
+|   |        JRE = JVM + Library Classes          |   |
+|   |        (Java Runtime Environment)           |   |
 |   |                                             |   |
 |   |   +-------------------------------------+   |   |
-|   |   | Java Virtual Machine (JVM)          |   |   |
+|   |   |    Java Virtual Machine (JVM)       |   |   |
 |   |   |                                     |   |   |
 |   |   |   +---------------------------+     |   |   |
-|   |   |   | JIT (Just-In-Time)        |     |   |   |
+|   |   |   |    JIT (Just-In-Time)     |     |   |   |
 |   |   |   +---------------------------+     |   |   |
 |   |   +-------------------------------------+   |   |
 |   +---------------------------------------------+   |
@@ -270,6 +270,48 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
   - Stack and Heap memory allocations.
 
 ## Datatypes
+
+```
+# Data Types in Java
+
+                             +----------------------+
+                             |   Data Types in Java |
+                             +-----------+----------+
+                                         |
+                     +-------------------+-------------------------+
+                     |                                             |
+                     v                                             v
+         +-----------------------+                   +----------------------------+
+         | Primitive Data Types  |                   | Non-Primitive Data Types   |
+         +-----------+-----------+                   +-------------+--------------+
+                     |                                             |
+                     |                                             v 
+      +--------------+----------------+                 +---------------------+
+      |                               |                 |        String       |
+      |                               |                 |        Array        |
+      v                               v                 |        etc          |
+ +---------+                   +-------------+          +---------------------+                          
+ | Numeric |                   | Non-Numeric |
+ +----+----+                   +------+------+     
+      |                               |  
+      |                               v    
+      |    +----------+          +----------+                 
+      +--->| Integer  |          | Boolean  |
+      |    +----+-----+          +----------+
+      |         |                            
+      |         +--> byte
+      |         +--> short
+      |         +--> int
+      |         +--> long
+      |
+      |    +----------------+                 
+      +--->| Floating Point |
+           +-------+--------+
+                   |
+                   +--> float
+                   +--> double
+
+```
 
 - Primitive Data Types in Java
   Primitive data types in Java store only single values and do not provide additional functionality. Java defines 8 primitive data types, as described in the table below:
