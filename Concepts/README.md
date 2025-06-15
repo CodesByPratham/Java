@@ -81,6 +81,7 @@ Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang
 
 ## How java code works
 
+```
                                     +-------------------+
                                     |   Source Code     |
                          +--------->|                   |
@@ -118,6 +119,7 @@ Examples: Perl, Ruby, Python, PHP, JavaScript, Erlang
      |  Windows OS    |  |   UNIX OS      |   |   Mac OS       |  |  Mobile OS     |
      | (Machine Code) |  | (Machine Code) |   | (Machine Code) |  | (Machine Code) |
      +----------------+  +----------------+   +----------------+  +----------------+
+```
 
 - Java code is written in a .java file using a text editor or an Integrated Development Environment (IDE).
   ```java
@@ -159,6 +161,7 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
 ## Java architecture
 
+```
 +-----------------------------------------------------+
 | JDK = JRE + Development Tools                       |
 | (Java Development Kit)                              |
@@ -176,6 +179,7 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 |   |   +-------------------------------------+   |   |
 |   +---------------------------------------------+   |
 +-----------------------------------------------------+
+```
 
 - JDK(Java Developement Kit)
   Provides environment to develop and run Java program.
@@ -220,6 +224,7 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
   - Manages memory by clearing unused objects.
 
+```
                Compile Time                    Runtime
                ------------                    -------
               +------------+             +------------------+
@@ -245,6 +250,7 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
                                             +--------------+
                                             |   Hardware   |
                                             +--------------+
+```
 
 - How JVM works:
   Class Loader:
