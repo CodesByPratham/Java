@@ -318,7 +318,7 @@ This process ensures Java's "Write Once, Run Anywhere" capability, as the byteco
 
   | Type    | Description                    | Default  | Size                             | Example Literals                                   | Range of Values                                         |
   | ------- | ------------------------------ | -------- | -------------------------------- | -------------------------------------------------- | ------------------------------------------------------- |
-  | boolean | true or false                  | false    | JVM-dependent (typically 1 byte) | `true`, `false`                                    | `true`, `false`                                         |
+  | boolean | true or false                  | false    | JVM-dependent (typically 1 bit) | `true`, `false`                                    | `true`, `false`                                         |
   | byte    | 8-bit signed integer           | 0        | 1 byte                           | _(none)_                                           | -128 to 127                                             |
   | char    | Unicode character (16-bit)     | `\u0000` | 2 bytes                          | `'a'`, `'\u0041'`, `'\101'`, `'\\'`, `'\n'`, `'β'` | 0 to 65,535 (unsigned)                                  |
   | short   | 16-bit signed integer          | 0        | 2 bytes                          | _(none)_                                           | -32,768 to 32,767                                       |
